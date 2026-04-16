@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html>
 <head>
@@ -12,6 +13,7 @@
         .page1 {
             height: 100vh;
             display: flex;
+            flex-direction: column;
             justify-content: center;
             align-items: center;
             background: pink;
@@ -30,6 +32,12 @@
             transform: scale(1.1);
         }
 
+        img {
+            width: 200px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+        }
+
         .page2 {
             display: none;
             height: 100vh;
@@ -43,6 +51,10 @@
 <body>
 
 <div class="page1" id="page1">
+
+    <!-- IMAGE 1 -->
+    <img src="your-image.jpg" alt="card image">
+
     <div class="card" onclick="openCard()">
         <h2>✨ Click Me ✨</h2>
         <p>Something special is waiting 💌</p>
@@ -50,6 +62,10 @@
 </div>
 
 <div class="page2" id="page2">
+
+    <!-- IMAGE 2 -->
+    <img src="your-image2.jpg" alt="surprise image">
+
     <h1>💖 Happy Special Day 💖</h1>
     <p>You are very special to me ✨</p>
 </div>
